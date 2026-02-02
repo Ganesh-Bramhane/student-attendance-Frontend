@@ -17,7 +17,7 @@ export default function Attendance() {
     const image = webcamRef.current.getScreenshot();
 
     const res = await axios.post(
-      "http://localhost:5000/attendance/recognize",
+      "http://localhost:5000/attendance/recognize" || "https://student-attendance-backend-1-445z.onrender.com/attendance/recognize",
       { image }
     );
 

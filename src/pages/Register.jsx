@@ -37,7 +37,7 @@ export default function Register() {
         return alert("Capture face first");
       }
 
-      const res = await axios.post("http://localhost:5000/register", {
+      const res = await axios.post("http://localhost:5000/register" || "https://student-attendance-backend-1-445z.onrender.com/register", {
         name,
         rollNo,
         images
